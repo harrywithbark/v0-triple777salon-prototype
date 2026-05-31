@@ -4,48 +4,48 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Triple777 Salon Luxury Design System */
-  /* 60% Canvas - Champagne Cream */
-  --background: #FAF4F2;
-  --background-alt: #FFFDFD;
+  /* Triple777 Salon Vibrant Design System */
+  /* 60% Canvas - Warm Cream */
+  --background: #FDF8F6;
+  --background-alt: #FFFFFF;
   
-  /* 30% Structure - Midnight Obsidian */
-  --foreground: #140F10;
+  /* 30% Structure - Rich Charcoal */
+  --foreground: #1A1214;
   
-  /* 10% Accents */
-  --accent-rose: #E8A598;
-  --accent-berry: #C84B61;
+  /* 10% Accents - Bolder, more saturated */
+  --accent-rose: #E07A6C;
+  --accent-berry: #D63B56;
   
   /* Card & Popover */
-  --card: #FFFDFD;
-  --card-foreground: #140F10;
-  --popover: #FFFDFD;
-  --popover-foreground: #140F10;
+  --card: #FFFFFF;
+  --card-foreground: #1A1214;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1214;
   
-  /* Primary - Electric Berry for high-intent actions */
-  --primary: #C84B61;
-  --primary-foreground: #FFFDFD;
+  /* Primary - Bold Berry for high-intent actions */
+  --primary: #D63B56;
+  --primary-foreground: #FFFFFF;
   
   /* Secondary */
-  --secondary: #FAF4F2;
-  --secondary-foreground: #140F10;
+  --secondary: #FDF8F6;
+  --secondary-foreground: #1A1214;
   
-  /* Muted */
-  --muted: #F5EEEC;
-  --muted-foreground: #6B5F61;
+  /* Muted - Slightly warmer */
+  --muted: #F7EDE9;
+  --muted-foreground: #5A4D4F;
   
-  /* Accent - Rose Gold */
-  --accent: #E8A598;
-  --accent-foreground: #140F10;
+  /* Accent - Vibrant Coral */
+  --accent: #E07A6C;
+  --accent-foreground: #1A1214;
   
   /* Destructive */
-  --destructive: #C84B61;
-  --destructive-foreground: #FFFDFD;
+  --destructive: #D63B56;
+  --destructive-foreground: #FFFFFF;
   
-  /* Borders & Inputs */
-  --border: rgba(20, 15, 16, 0.08);
-  --input: rgba(20, 15, 16, 0.08);
-  --ring: #E8A598;
+  /* Borders & Inputs - Sharper */
+  --border: rgba(26, 18, 20, 0.12);
+  --input: rgba(26, 18, 20, 0.12);
+  --ring: #D63B56;
   
   /* Radius */
   --radius: 0.375rem;

@@ -10,13 +10,13 @@ export function HeroSection() {
           {/* Content */}
           <div className="space-y-8 opacity-0 animate-fade-in-up">
             <div className="space-y-6">
-              <p className="text-[#E8A598] text-sm font-medium tracking-widest uppercase opacity-0 animate-fade-in-up">
+              <p className="text-[#D63B56] text-sm font-semibold tracking-widest uppercase opacity-0 animate-fade-in-up">
                 17 Years of Licensed Mastery - Abbotsford, BC
               </p>
-              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#140F10] leading-[1.1] text-balance opacity-0 animate-fade-in-up animation-delay-100">
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1A1214] leading-[1.1] text-balance opacity-0 animate-fade-in-up animation-delay-100">
                 Premium Hair & Esthetics, Tailored to You.
               </h1>
-              <p className="text-[#6B5F61] text-lg leading-relaxed max-w-lg opacity-0 animate-fade-in-up animation-delay-200">
+              <p className="text-[#5A4D4F] text-lg leading-relaxed max-w-lg opacity-0 animate-fade-in-up animation-delay-200">
                 Experience the artistry of precision styling and rejuvenating treatments in our private, professional salon suite.
               </p>
             </div>
@@ -25,7 +25,7 @@ export function HeroSection() {
               <Button 
                 asChild
                 size="lg"
-                className="bg-[#C84B61] hover:bg-[#B03D52] text-white px-8 py-6 text-base"
+                className="bg-[#D63B56] hover:bg-[#C02E48] text-white px-8 py-6 text-base font-semibold shadow-lg shadow-[#D63B56]/25"
               >
                 <Link href="/book-now">
                   Reserve Your Spot
@@ -36,7 +36,7 @@ export function HeroSection() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-[#140F10] text-[#140F10] hover:bg-[#140F10] hover:text-white px-8 py-6 text-base"
+                className="border-2 border-[#1A1214] text-[#1A1214] hover:bg-[#1A1214] hover:text-white px-8 py-6 text-base font-semibold"
               >
                 <Link href="/services">
                   Explore Menu
@@ -47,16 +47,16 @@ export function HeroSection() {
 
           {/* Image */}
           <div className="relative lg:h-[600px] h-[400px] opacity-0 animate-fade-in-up animation-delay-200">
-            <div className="absolute inset-0 rounded-2xl overflow-hidden">
+            <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/placeholder.svg?height=600&width=500"
+                src="/hero-salon.png"
                 alt="Professional hair styling at Triple777 Salon"
                 className="w-full h-full object-cover animate-ken-burns"
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#E8A598]/20 rounded-full blur-3xl" />
-            <div className="absolute -top-6 -right-6 w-40 h-40 bg-[#C84B61]/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#E07A6C]/30 rounded-full blur-3xl" />
+            <div className="absolute -top-6 -right-6 w-40 h-40 bg-[#D63B56]/20 rounded-full blur-3xl" />
           </div>
         </div>
       </div>
