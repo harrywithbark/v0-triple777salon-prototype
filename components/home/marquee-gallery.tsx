@@ -42,33 +42,34 @@ export function MarqueeGallery() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="py-20 bg-[#FFFBFA] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <section ref={sectionRef} className="py-12 sm:py-20 bg-[#FFFBFA] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 sm:mb-12">
         <div className="text-center scroll-fade-up">
-          <p className="text-[#E8A598] text-sm font-medium tracking-widest uppercase mb-4">
+          <p className="text-[#E8A598] text-xs sm:text-sm font-medium tracking-widest uppercase mb-3 sm:mb-4">
             Portfolio
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-[#0D0809] text-balance">
+          <h2 className="font-serif text-2xl sm:text-4xl font-semibold text-[#0D0809] text-balance">
             Our Work Speaks for Itself
           </h2>
         </div>
       </div>
 
       {/* Marquee Row 1 - Left */}
-      <div className="relative mb-6 scroll-fade-up stagger-2">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FFFBFA] to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FFFBFA] to-transparent z-10" />
+      <div className="relative mb-4 sm:mb-6 scroll-fade-up stagger-2">
+        <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-[#FFFBFA] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-[#FFFBFA] to-transparent z-10" />
         
         <div className="flex animate-marquee hover:[animation-play-state:paused]">
           {[...portfolioImages, ...portfolioImages].map((image, index) => (
             <div 
               key={`row1-${index}`}
-              className="shrink-0 w-[250px] h-[333px] mx-3 rounded-lg overflow-hidden"
+              className="shrink-0 w-[180px] h-[240px] sm:w-[250px] sm:h-[333px] mx-2 sm:mx-3 rounded-lg overflow-hidden"
             >
               <img
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
               />
             </div>
           ))}
@@ -77,19 +78,20 @@ export function MarqueeGallery() {
 
       {/* Marquee Row 2 - Right */}
       <div className="relative scroll-fade-up stagger-3">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FFFBFA] to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FFFBFA] to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-[#FFFBFA] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-[#FFFBFA] to-transparent z-10" />
         
         <div className="flex animate-marquee-reverse hover:[animation-play-state:paused]">
           {[...estheticsImages, ...estheticsImages].map((image, index) => (
             <div 
               key={`row2-${index}`}
-              className="shrink-0 w-[250px] h-[333px] mx-3 rounded-lg overflow-hidden"
+              className="shrink-0 w-[180px] h-[240px] sm:w-[250px] sm:h-[333px] mx-2 sm:mx-3 rounded-lg overflow-hidden"
             >
               <img
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
               />
             </div>
           ))}

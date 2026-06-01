@@ -65,49 +65,49 @@ export function ReviewCarousel() {
   }
 
   return (
-    <section ref={sectionRef} className="py-20">
+    <section ref={sectionRef} className="py-12 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 scroll-fade-up">
-          <p className="text-[#E8A598] text-sm font-medium tracking-widest uppercase mb-4">
+        <div className="text-center mb-8 sm:mb-12 scroll-fade-up">
+          <p className="text-[#E8A598] text-xs sm:text-sm font-medium tracking-widest uppercase mb-3 sm:mb-4">
             Testimonials
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-[#0D0809] text-balance">
+          <h2 className="font-serif text-2xl sm:text-4xl font-semibold text-[#0D0809] text-balance">
             What Our Clients Say
           </h2>
         </div>
 
         <div className="relative max-w-3xl mx-auto scroll-fade-up stagger-2">
           {/* Review Card */}
-          <div className="bg-[#FFFBFA] rounded-2xl p-8 sm:p-12 border border-[#0D0809]/5 card-hover">
+          <div className="bg-[#FFFBFA] rounded-xl sm:rounded-2xl p-6 sm:p-12 border border-[#0D0809]/5 card-hover">
             {/* Stars */}
-            <div className="flex items-center justify-center gap-1 mb-6">
+            <div className="flex items-center justify-center gap-1 mb-4 sm:mb-6">
               {[...Array(reviews[currentIndex].rating)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-[#E8A598] text-[#E8A598]" />
+                <Star key={i} className="w-4 h-4 sm:w-5 sm:h-5 fill-[#E8A598] text-[#E8A598]" />
               ))}
             </div>
 
             {/* Quote */}
-            <blockquote className="text-center mb-8">
-              <p className="text-lg sm:text-xl text-[#0D0809] leading-relaxed font-serif italic">
+            <blockquote className="text-center mb-6 sm:mb-8">
+              <p className="text-base sm:text-xl text-[#0D0809] leading-relaxed font-serif italic">
                 &ldquo;{reviews[currentIndex].text}&rdquo;
               </p>
             </blockquote>
 
             {/* Attribution */}
             <div className="text-center">
-              <p className="font-semibold text-[#0D0809]">{reviews[currentIndex].name}</p>
-              <p className="text-sm text-[#6B5F61]">via {reviews[currentIndex].source}</p>
+              <p className="font-semibold text-sm sm:text-base text-[#0D0809]">{reviews[currentIndex].name}</p>
+              <p className="text-xs sm:text-sm text-[#6B5F61]">via {reviews[currentIndex].source}</p>
             </div>
           </div>
 
           {/* Navigation */}
-          <div className="flex items-center justify-center gap-4 mt-8">
+          <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
             <button
               onClick={prevReview}
-              className="w-12 h-12 rounded-full border border-[#0D0809]/10 flex items-center justify-center hover:bg-[#0D0809] hover:text-white transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-[#0D0809]/10 flex items-center justify-center hover:bg-[#0D0809] hover:text-white transition-colors"
               aria-label="Previous review"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
             
             {/* Dots */}
@@ -126,10 +126,10 @@ export function ReviewCarousel() {
 
             <button
               onClick={nextReview}
-              className="w-12 h-12 rounded-full border border-[#0D0809]/10 flex items-center justify-center hover:bg-[#0D0809] hover:text-white transition-colors"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-[#0D0809]/10 flex items-center justify-center hover:bg-[#0D0809] hover:text-white transition-colors"
               aria-label="Next review"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
         </div>
