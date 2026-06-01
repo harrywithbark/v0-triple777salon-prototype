@@ -1,5 +1,7 @@
 'use client'
 
+import { useEffect, useRef } from 'react'
+
 const portfolioImages = [
   { id: 1, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 1' },
   { id: 2, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 2' },
@@ -19,23 +21,43 @@ const estheticsImages = [
 ]
 
 export function MarqueeGallery() {
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    const elements = sectionRef.current?.querySelectorAll('.scroll-fade-up')
+    elements?.forEach((el) => observer.observe(el))
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="py-20 bg-[#FFFDFD] overflow-hidden">
+    <section ref={sectionRef} className="py-20 bg-[#FFFBFA] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="text-center">
+        <div className="text-center scroll-fade-up">
           <p className="text-[#E8A598] text-sm font-medium tracking-widest uppercase mb-4">
             Portfolio
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-[#140F10] text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-[#0D0809] text-balance">
             Our Work Speaks for Itself
           </h2>
         </div>
       </div>
 
       {/* Marquee Row 1 - Left */}
-      <div className="relative mb-6">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FFFDFD] to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FFFDFD] to-transparent z-10" />
+      <div className="relative mb-6 scroll-fade-up stagger-2">
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FFFBFA] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FFFBFA] to-transparent z-10" />
         
         <div className="flex animate-marquee hover:[animation-play-state:paused]">
           {[...portfolioImages, ...portfolioImages].map((image, index) => (
@@ -54,9 +76,9 @@ export function MarqueeGallery() {
       </div>
 
       {/* Marquee Row 2 - Right */}
-      <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FFFDFD] to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FFFDFD] to-transparent z-10" />
+      <div className="relative scroll-fade-up stagger-3">
+        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FFFBFA] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#FFFBFA] to-transparent z-10" />
         
         <div className="flex animate-marquee-reverse hover:[animation-play-state:paused]">
           {[...estheticsImages, ...estheticsImages].map((image, index) => (

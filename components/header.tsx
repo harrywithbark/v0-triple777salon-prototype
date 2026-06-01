@@ -40,7 +40,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3">
             <Scissors className="w-6 h-6 text-[#E8A598]" />
             <div className="flex flex-col">
-              <span className="font-serif text-lg lg:text-xl font-semibold text-[#140F10]">
+              <span className="font-serif text-lg lg:text-xl font-semibold text-[#0D0809]">
                 Triple777Salon.LTD
               </span>
               <span className="text-[10px] text-[#6B5F61] hidden sm:block">
@@ -55,7 +55,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-[#140F10] hover:text-[#C84B61] transition-colors"
+                className="nav-link text-sm font-medium text-[#0D0809] hover:text-[#D4324B] transition-colors"
               >
                 {item.label}
               </Link>
@@ -66,7 +66,7 @@ export function Header() {
           <div className="hidden lg:block">
             <Button 
               asChild
-              className="bg-[#C84B61] hover:bg-[#B03D52] text-white px-6"
+              className="bg-[#D4324B] hover:bg-[#B82940] text-white px-6"
             >
               <Link href="/book-now">Book Online</Link>
             </Button>
@@ -74,7 +74,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 text-[#140F10]"
+            className="lg:hidden p-2 text-[#0D0809]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -84,13 +84,13 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-[#140F10]/5">
+          <div className="lg:hidden py-4 border-t border-[#0D0809]/5">
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-base font-medium text-[#140F10] hover:text-[#C84B61] transition-colors py-2"
+                  className="text-base font-medium text-[#0D0809] hover:text-[#D4324B] transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}

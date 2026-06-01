@@ -1,11 +1,34 @@
+'use client'
+
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { useEffect, useRef } from 'react'
 
 export function ClosingBanner() {
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    const elements = sectionRef.current?.querySelectorAll('.scroll-fade-up')
+    elements?.forEach((el) => observer.observe(el))
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <section className="py-20 bg-[#140F10]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section ref={sectionRef} className="py-20 bg-[#0D0809]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center scroll-fade-up">
         <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6 text-balance">
           Ready for a Transformation?
         </h2>
@@ -15,7 +38,7 @@ export function ClosingBanner() {
         <Button 
           asChild
           size="lg"
-          className="bg-[#C84B61] hover:bg-[#B03D52] text-white px-10 py-6 text-lg"
+          className="bg-[#D4324B] hover:bg-[#B82940] text-white px-10 py-6 text-lg"
         >
           <Link href="/book-now">
             Book Your Appointment
