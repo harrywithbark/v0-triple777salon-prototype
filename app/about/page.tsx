@@ -12,14 +12,14 @@ const team = [
     name: 'Kiran',
     role: 'Owner & Master Stylist',
     experience: '17+ years',
-    image: '/placeholder.svg?height=400&width=400',
+    image: '/images/stylist-kiran.png',
     bio: 'Licensed master stylist specializing in hair physics and skin metrics. Academy trained with expertise in permanent straightening, dimensional coloring, and precision threading.',
   },
   {
     name: 'Iadalia',
     role: 'Senior Esthetician',
     experience: '20+ years',
-    image: '/placeholder.svg?height=400&width=400',
+    image: '/images/esthetician-iadalia.png',
     bio: 'Veteran esthetician with two decades of experience in skincare treatments, waxing, and nail services.',
   },
 ]
@@ -34,7 +34,7 @@ export default function AboutPage() {
             {/* Image */}
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden">
               <img
-                src="/placeholder.svg?height=500&width=500"
+                src="/images/stylist-kiran.png"
                 alt="Kiran - Owner and Master Stylist"
                 className="w-full h-full object-cover"
               />

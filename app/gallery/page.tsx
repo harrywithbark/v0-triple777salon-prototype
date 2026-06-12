@@ -6,18 +6,18 @@ import { X } from 'lucide-react'
 const filters = ['All', 'Highlights', 'Permanent Straightening', 'Skincare', 'Threading']
 
 const galleryItems = [
-  { id: 1, src: '/placeholder.svg?height=600&width=400', alt: 'Hair highlights transformation', category: 'Highlights', treatments: ['Multi-Tonal Highlights', 'Precision Cut'] },
-  { id: 2, src: '/placeholder.svg?height=400&width=400', alt: 'Permanent straightening result', category: 'Permanent Straightening', treatments: ['Japanese Straightening', 'Deep Conditioning'] },
-  { id: 3, src: '/placeholder.svg?height=500&width=400', alt: 'Facial skincare treatment', category: 'Skincare', treatments: ['Multi-Layer Facial', 'Hydration Treatment'] },
-  { id: 4, src: '/placeholder.svg?height=400&width=400', alt: 'Eyebrow threading', category: 'Threading', treatments: ['Precision Threading', 'Eyebrow Shaping'] },
-  { id: 5, src: '/placeholder.svg?height=600&width=400', alt: 'Balayage highlights', category: 'Highlights', treatments: ['Balayage', 'Toning', 'Gloss Treatment'] },
-  { id: 6, src: '/placeholder.svg?height=400&width=400', alt: 'Keratin treatment', category: 'Permanent Straightening', treatments: ['Keratin Treatment', 'Smoothing'] },
-  { id: 7, src: '/placeholder.svg?height=500&width=400', alt: 'Facial treatment results', category: 'Skincare', treatments: ['Deep Cleansing', 'Anti-Aging Treatment'] },
-  { id: 8, src: '/placeholder.svg?height=400&width=400', alt: 'Full face threading', category: 'Threading', treatments: ['Full Face Threading', 'Tinting'] },
-  { id: 9, src: '/placeholder.svg?height=600&width=400', alt: 'Dimensional color', category: 'Highlights', treatments: ['Dimensional Color', 'Root Touch-up'] },
-  { id: 10, src: '/placeholder.svg?height=500&width=400', alt: 'Straightening before after', category: 'Permanent Straightening', treatments: ['Permanent Straightening', 'Trim'] },
-  { id: 11, src: '/placeholder.svg?height=400&width=400', alt: 'Skincare glow', category: 'Skincare', treatments: ['Chemical Peel', 'LED Therapy'] },
-  { id: 12, src: '/placeholder.svg?height=500&width=400', alt: 'Threading precision', category: 'Threading', treatments: ['Lip & Chin Threading'] },
+  { id: 1, src: '/images/highlights.png', alt: 'Hair highlights transformation', category: 'Highlights', treatments: ['Multi-Tonal Highlights', 'Precision Cut'] },
+  { id: 2, src: '/images/straightening.png', alt: 'Permanent straightening result', category: 'Permanent Straightening', treatments: ['Japanese Straightening', 'Deep Conditioning'] },
+  { id: 3, src: '/images/facial.png', alt: 'Facial skincare treatment', category: 'Skincare', treatments: ['Multi-Layer Facial', 'Hydration Treatment'] },
+  { id: 4, src: '/images/threading.png', alt: 'Eyebrow threading', category: 'Threading', treatments: ['Precision Threading', 'Eyebrow Shaping'] },
+  { id: 5, src: '/images/balayage.png', alt: 'Balayage highlights', category: 'Highlights', treatments: ['Balayage', 'Toning', 'Gloss Treatment'] },
+  { id: 6, src: '/images/keratin.png', alt: 'Keratin treatment', category: 'Permanent Straightening', treatments: ['Keratin Treatment', 'Smoothing'] },
+  { id: 7, src: '/images/skincare-glow.png', alt: 'Facial treatment results', category: 'Skincare', treatments: ['Deep Cleansing', 'Anti-Aging Treatment'] },
+  { id: 8, src: '/images/full-face-threading.png', alt: 'Full face threading', category: 'Threading', treatments: ['Full Face Threading', 'Tinting'] },
+  { id: 9, src: '/images/dimensional-color.png', alt: 'Dimensional color', category: 'Highlights', treatments: ['Dimensional Color', 'Root Touch-up'] },
+  { id: 10, src: '/images/keratin.png', alt: 'Straightening before after', category: 'Permanent Straightening', treatments: ['Permanent Straightening', 'Trim'] },
+  { id: 11, src: '/images/skincare-glow.png', alt: 'Skincare glow', category: 'Skincare', treatments: ['Chemical Peel', 'LED Therapy'] },
+  { id: 12, src: '/images/full-face-threading.png', alt: 'Threading precision', category: 'Threading', treatments: ['Lip & Chin Threading'] },
 ]
 
 export default function GalleryPage() {
