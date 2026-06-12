@@ -16,7 +16,7 @@ export function SpecialtyShowcase() {
           {/* Image */}
           <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden">
             <img
-              src="/placeholder.svg?height=500&width=600"
+              src="/placeholder.jpg"
               alt="Technical hair styling showcase"
               className="w-full h-full object-cover"
             />

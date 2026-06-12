@@ -1,21 +1,21 @@
 'use client'
 
 const portfolioImages = [
-  { id: 1, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 1' },
-  { id: 2, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 2' },
-  { id: 3, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 3' },
-  { id: 4, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 4' },
-  { id: 5, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 5' },
-  { id: 6, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 6' },
+  { id: 1, src: '/placeholder.jpg', alt: 'Hair transformation 1' },
+  { id: 2, src: '/placeholder.jpg', alt: 'Hair transformation 2' },
+  { id: 3, src: '/placeholder.jpg', alt: 'Hair transformation 3' },
+  { id: 4, src: '/placeholder.jpg', alt: 'Hair transformation 4' },
+  { id: 5, src: '/placeholder.jpg', alt: 'Hair transformation 5' },
+  { id: 6, src: '/placeholder.jpg', alt: 'Hair transformation 6' },
 ]
 
 const estheticsImages = [
-  { id: 1, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 1' },
-  { id: 2, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 2' },
-  { id: 3, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 3' },
-  { id: 4, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 4' },
-  { id: 5, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 5' },
-  { id: 6, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 6' },
+  { id: 1, src: '/placeholder.jpg', alt: 'Esthetics work 1' },
+  { id: 2, src: '/placeholder.jpg', alt: 'Esthetics work 2' },
+  { id: 3, src: '/placeholder.jpg', alt: 'Esthetics work 3' },
+  { id: 4, src: '/placeholder.jpg', alt: 'Esthetics work 4' },
+  { id: 5, src: '/placeholder.jpg', alt: 'Esthetics work 5' },
+  { id: 6, src: '/placeholder.jpg', alt: 'Esthetics work 6' },
 ]
 
 export function MarqueeGallery() {

@@ -49,7 +49,7 @@ export function HeroSection() {
           <div className="relative lg:h-[600px] h-[400px] opacity-0 animate-fade-in-up animation-delay-200">
             <div className="absolute inset-0 rounded-2xl overflow-hidden">
               <img
-                src="/placeholder.svg?height=600&width=500"
+                src="/placeholder.jpg"
                 alt="Professional hair styling at Triple777 Salon"
                 className="w-full h-full object-cover animate-ken-burns"
               />
