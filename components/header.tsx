@@ -84,7 +84,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-[#140F10]/5">
+          <div className="lg:hidden py-4 border-t border-[#140F10]/10 bg-[#FFFDF9]/95 backdrop-blur-md shadow-md -mx-4 sm:-mx-6 px-4 sm:px-6">
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <Link

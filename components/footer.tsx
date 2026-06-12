@@ -3,7 +3,7 @@ import { Scissors, Instagram, Facebook, MapPin } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="bg-[#140F10] text-white py-16">
+    <footer className="bg-[#140F10] text-white py-16" style={{ backgroundImage: 'linear-gradient(to bottom, rgba(201,169,110,0.18) 0%, rgba(201,169,110,0.06) 100%)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -77,7 +77,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/50">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-white/50 bg-[#C9A96E]/10 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8 pb-4 rounded-b-sm">
           <p>Triple777Salon.LTD &copy; {new Date().getFullYear()} All Rights Reserved</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
