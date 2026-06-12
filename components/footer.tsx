@@ -3,7 +3,7 @@ import { Scissors, Instagram, Facebook, MapPin } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="bg-[#140F10] text-white py-16">
+    <footer className="bg-[#140F10] text-white py-16" style={{ backgroundImage: 'linear-gradient(to bottom, rgba(201,169,110,0.18) 0%, rgba(201,169,110,0.06) 100%)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
