@@ -7,22 +7,7 @@ const milestones = [
   { year: '2024', title: 'Triple777Salon.LTD', description: 'Rebranded and expanded services with A+ BBB accreditation' },
 ]
 
-const team = [
-  {
-    name: 'Kiran',
-    role: 'Owner & Master Stylist',
-    experience: '17+ years',
-    image: '/placeholder.svg?height=400&width=400',
-    bio: 'Licensed master stylist specializing in hair physics and skin metrics. Academy trained with expertise in permanent straightening, dimensional coloring, and precision threading.',
-  },
-  {
-    name: 'Iadalia',
-    role: 'Senior Esthetician',
-    experience: '20+ years',
-    image: '/placeholder.svg?height=400&width=400',
-    bio: 'Veteran esthetician with two decades of experience in skincare treatments, waxing, and nail services.',
-  },
-]
+const team = []
 
 export default function AboutPage() {
   return (
@@ -31,20 +16,8 @@ export default function AboutPage() {
       <section className="py-16 bg-[#FFFDFD]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image */}
-            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden">
-              <img
-                src="/placeholder.svg?height=500&width=500"
-                alt="Kiran - Owner and Master Stylist"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#140F10]/80 to-transparent">
-                <p className="text-white font-serif text-xl">Kiran</p>
-                <p className="text-white/70 text-sm">Owner & Master Stylist</p>
-              </div>
-            </div>
 
-            {/* Content */}
+
             <div className="space-y-6">
               <div>
                 <p className="text-[#E8A598] text-sm font-medium tracking-widest uppercase mb-4">
@@ -151,31 +124,7 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {team.map((member, index) => (
-              <div key={index} className="bg-white rounded-2xl overflow-hidden border border-[#140F10]/5">
-                <div className="aspect-square">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <div>
-                      <h3 className="font-serif text-xl font-semibold text-[#140F10]">{member.name}</h3>
-                      <p className="text-sm text-[#C84B61]">{member.role}</p>
-                    </div>
-                    <span className="px-3 py-1 bg-[#E8A598]/10 text-[#C84B61] text-xs font-medium rounded-full">
-                      {member.experience}
-                    </span>
-                  </div>
-                  <p className="text-sm text-[#6B5F61] leading-relaxed">{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+
         </div>
       </section>
     </div>

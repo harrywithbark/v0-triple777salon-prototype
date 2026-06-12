@@ -1,21 +1,21 @@
 'use client'
 
 const portfolioImages = [
-  { id: 1, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 1' },
-  { id: 2, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 2' },
-  { id: 3, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 3' },
-  { id: 4, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 4' },
-  { id: 5, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 5' },
-  { id: 6, src: '/placeholder.svg?height=400&width=300', alt: 'Hair transformation 6' },
+  { id: 1, src: '/images/highlights.png', alt: 'Multi-tonal blonde highlights' },
+  { id: 2, src: '/images/balayage.png', alt: 'Soft balayage highlights' },
+  { id: 3, src: '/images/straightening.png', alt: 'Permanent hair straightening result' },
+  { id: 4, src: '/images/dimensional-color.png', alt: 'Dimensional hair color' },
+  { id: 5, src: '/images/keratin.png', alt: 'Keratin smoothing treatment' },
+  { id: 6, src: '/images/updo.png', alt: 'Elegant custom updo' },
 ]
 
 const estheticsImages = [
-  { id: 1, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 1' },
-  { id: 2, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 2' },
-  { id: 3, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 3' },
-  { id: 4, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 4' },
-  { id: 5, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 5' },
-  { id: 6, src: '/placeholder.svg?height=400&width=300', alt: 'Esthetics work 6' },
+  { id: 1, src: '/images/facial.png', alt: 'Multi-layer skincare facial' },
+  { id: 2, src: '/images/threading.png', alt: 'Precision eyebrow threading' },
+  { id: 3, src: '/images/skincare-glow.png', alt: 'Radiant glowing skin' },
+  { id: 4, src: '/images/full-face-threading.png', alt: 'Full face threading' },
+  { id: 5, src: '/images/waxing.png', alt: 'Professional waxing treatment' },
+  { id: 6, src: '/images/mens-cut.png', alt: 'Precision fade haircut' },
 ]
 
 export function MarqueeGallery() {
